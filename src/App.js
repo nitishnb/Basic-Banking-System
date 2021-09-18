@@ -20,7 +20,7 @@ class App extends Component {
       <Router>
         <div className="container">
           <nav className="navbar navbar-expand-lg navbar-dark bg-dark">&emsp;
-            <a class="navbar-brand" href="https://codingthesmartway.com" target="_blank">
+            <a class="navbar-brand" href="https://banksystemmern.herokuapp.com/" target="_blank">
               <img src={logo} width="30" height="30" alt="CodingTheSmartWay.com" />
             </a>
             <Link to="/" className="navbar-brand">Basic Banking System</Link>&emsp;

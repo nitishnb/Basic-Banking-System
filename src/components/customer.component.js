@@ -29,20 +29,6 @@ export default class CustomerInfo extends Component {
             })
     }
 
-    onSubmit(e) {
-        if(window.confirm("Are you sure to Delete Permanently?")){
-            e.preventDefault();
-            axios.delete('https://cors-anywhere.herokuapp.com/https://p9cr05kfmd.execute-api.us-east-1.amazonaws.com/prod/product?productid='+this.props.match.params.id)
-                .then(res =>{
-                    console.log(res.data);
-                    alert(`Productid : ${this.props.match.params.id} Deleted succesfully..!`);
-            });
-        } else {
-            alert("Deletion Failed")
-        }
-    }
-
-
     render() {
         return (
             <div>
