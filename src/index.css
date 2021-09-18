@@ -5,9 +5,60 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  counter-reset: Serial; 
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+tr td:first-child:before {
+  counter-increment: Serial;      /* Increment the Serial counter */
+  content: counter(Serial) "."; /* Display the counter */
+}
+
+nitish {
+  font-size: 30px;
+}
+
+.bottomright {
+  position: absolute;
+  bottom: 8px;
+  right: 16px;
+  font-size: 18px;
+}
+
+
+body {
+  text-align: center;
+  /* padding: 40px 0; */
+  background: #EBF0F5;
+}
+  h1 {
+    color: #2d75fa;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    font-weight: 900;
+    font-size: 40px;
+    margin-bottom: 10px;
+  }
+  p {
+    color: #404F5E;
+    font-family: "Nunito Sans", "Helvetica Neue", sans-serif;
+    /* font-size:20px; */
+    margin: 0;
+  }
+i {
+  color: #32be45;
+  font-size: 100px;
+  line-height: 200px;
+  margin-left:-15px;
+}
+.card {
+  background: white;
+  /* padding: 60px; */
+  border-radius: 4px;
+  box-shadow: 0 2px 3px #C8D0D8;
+  display: inline-block;
+  margin: 0 auto;
 }
